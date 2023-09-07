@@ -11,3 +11,8 @@
     display: flex;
     flex: 1;
 }
+
+#row div {
+    flex: 1;
+    border: 3px solid;
+}
