@@ -7,12 +7,12 @@
     margin: auto;
 }
 
-#row {
+.row {
     display: flex;
     flex: 1;
 }
 
-#row div {
+.row div {
     flex: 1;
     border: 3px solid;
 }
