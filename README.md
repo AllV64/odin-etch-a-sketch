@@ -1,1 +1,2 @@
 # odin-etch-a-sketch
+In this project, I will build something in between a sketchpad and an Etch-A-Sketch in the browser. To help me achive this, I will use flexbox to make divs display as a grid. I will also use DOM manipulation to make, remove and edit css properties and classes of divs.
