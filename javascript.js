@@ -16,8 +16,9 @@ function createGrid(size){
 }
 
 let squareRoot = 4;
+let cells = container.querySelectorAll('div.row > div');
 if (createGrid(squareRoot) == 'updated'){
-    var cells = container.querySelectorAll('div.row > div');
+    cells = container.querySelectorAll('div.row > div');
 }
 
 cells.forEach((cell) => {
