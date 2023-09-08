@@ -3,7 +3,7 @@
     flex-direction: column;
     height: 500px;
     width: 500px;
-    border: 2px solid;
+    border: 1px solid;
     margin: auto;
 }
 
@@ -14,7 +14,7 @@
 
 .row div {
     flex: 1;
-    border: 2px solid;
+    border: 1px solid;
 }
 
 .colored {
