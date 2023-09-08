@@ -12,5 +12,9 @@ function createGrid(size){
            currentRow.appendChild(cell);
         }
     }
+    return 'updated';
 }
-createGrid(4);
+
+if (createGrid(4) == 'updated'){
+    var cells = container.querySelectorAll('div.row > div');
+}
