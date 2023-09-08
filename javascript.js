@@ -27,6 +27,9 @@ cells.forEach((cell) => {
     })
 });
 
+const buttonContainer = document.querySelector('#button-container');
+const invalidInput = document.createElement('div');
+buttonContainer.appendChild(invalidInput);
 changeGridSize = document.querySelector('button');
 changeGridSize.addEventListener('click', () => {
     container.innerHTML = '';
