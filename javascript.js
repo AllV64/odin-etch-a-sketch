@@ -25,6 +25,10 @@ cells.forEach((cell) => {
     })
 });
 
+changeGridSize = document.querySelector('button');
+changeGridSize.addEventListener('click', () => {
+})
+
 function addColor(cell){
     cell.classList.add('colored');
 }
