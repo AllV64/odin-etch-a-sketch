@@ -16,7 +16,7 @@ function createGrid(size){
 }
 
 let squareRoot = 4;
-if (createGrid(4) == 'updated'){
+if (createGrid(squareRoot) == 'updated'){
     var cells = container.querySelectorAll('div.row > div');
 }
 
