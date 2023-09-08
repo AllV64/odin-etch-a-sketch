@@ -18,3 +18,8 @@ function createGrid(size){
 if (createGrid(4) == 'updated'){
     var cells = container.querySelectorAll('div.row > div');
 }
+
+cells.forEach((cell) => {
+    cell.addEventListener('mouseover', () => {
+    })
+});
