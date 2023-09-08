@@ -33,6 +33,7 @@ buttonContainer.appendChild(invalidInput);
 changeGridSize = document.querySelector('button');
 changeGridSize.addEventListener('click', () => {
     container.innerHTML = '';
+    let userInput = prompt(`Type a number between 1 and 100`);
 })
 
 function addColor(cell){
