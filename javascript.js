@@ -21,5 +21,10 @@ if (createGrid(4) == 'updated'){
 
 cells.forEach((cell) => {
     cell.addEventListener('mouseover', () => {
+        addColor(cell);
     })
 });
+
+function addColor(cell){
+    cell.classList.add('colored');
+}
