@@ -15,6 +15,7 @@ function createGrid(size){
     return 'updated';
 }
 
+let squareRoot = 4;
 if (createGrid(4) == 'updated'){
     var cells = container.querySelectorAll('div.row > div');
 }
