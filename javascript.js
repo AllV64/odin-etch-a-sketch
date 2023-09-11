@@ -28,7 +28,7 @@ function validateUserInput(userInput){
     }
 }
 
-let squareRoot = 4;
+let squareRoot = 16;
 createGrid(squareRoot);
 let cells = container.querySelectorAll('div.row > div');
 
