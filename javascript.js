@@ -15,6 +15,19 @@ function createGrid(size){
     return 'updated';
 }
 
+function validateUserInput(userInput){
+    if (isNaN(userInput)){
+        invalidInput.textContent = `You must enter a number. You entered ${userInput}`;
+    } else if (userInput % 1 != 0){
+        invalidInput.textContent = `You must enter a whole number. You entered ${userInput}`
+    } else if (userInput <= 0 || userInput > 100){
+        invalidInput.textContent = `You must enter a number between 1 and 100. You entered ${userInput}`
+    } else {
+        squareRoot = userInput;
+        invalidInput.textContent = "";
+    }
+}
+
 let squareRoot = 4;
 let cells = container.querySelectorAll('div.row > div');
 if (createGrid(squareRoot) == 'updated'){
@@ -34,6 +47,7 @@ changeGridSize = document.querySelector('button');
 changeGridSize.addEventListener('click', () => {
     container.innerHTML = '';
     let userInput = prompt(`Type a number between 1 and 100`);
+    validateUserInput(userInput);
 })
 
 function addColor(cell){
