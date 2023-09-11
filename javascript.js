@@ -6,7 +6,7 @@ function createGrid(size){
         row.classList.add('row');
         container.appendChild(row);
         for (x = 0; x < size; x++){
-        console.log(i);
+           console.log(i);
            let currentRow = document.querySelector(`#row${i}`);
            const cell = document.createElement('div');
            currentRow.appendChild(cell);
@@ -16,6 +16,7 @@ function createGrid(size){
 }
 
 function validateUserInput(userInput){
+    userInput = parseInt(userInput);
     if (isNaN(userInput)){
         invalidInput.textContent = `You must enter a number. You entered ${userInput}`;
     } else if (userInput % 1 != 0){
@@ -48,7 +49,7 @@ changeGridSize.addEventListener('click', () => {
     container.innerHTML = '';
     let userInput = prompt(`Type a number between 1 and 100`);
     validateUserInput(userInput);
-    createGrid(userInput);
+    createGrid(squareRoot);
 })
 
 function addColor(cell){
