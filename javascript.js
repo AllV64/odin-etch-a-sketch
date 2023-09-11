@@ -74,7 +74,6 @@ function addBrightness(cell){
         cell.style.filter == cell.style.filter;
     } else {
         let brightnessValue = cell.style.filter.slice(-4, -1);
-        console.log('yes');
         cell.style.filter = `brightness(${parseFloat(brightnessValue) + 0.1})`;
     }
     
