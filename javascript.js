@@ -59,5 +59,5 @@ changeGridSize.addEventListener('click', () => {
 })
 
 function addColor(cell){
-    cell.classList.add('colored');
+    
 }
