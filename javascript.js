@@ -35,6 +35,7 @@ function cellHover(){
     cells.forEach((cell) => {
         cell.addEventListener('mouseover', () => {
             addRandomColor(cell);
+            addBrightness(cell);
         })
     });
 };
@@ -64,4 +65,17 @@ function addRandomColor(cell){
         let blue = Math.floor(Math.random() * 256);
         cell.style.cssText = `background: rgb(${red}, ${green}, ${blue})`; 
     }
+}
+
+function addBrightness(cell){
+    if (cell.style.filter == ''){
+        cell.style.filter = 'brightness(0.1)';
+    } else if (cell.style.filter == 'brightness(1)'){
+        cell.style.filter == cell.style.filter;
+    } else {
+        let brightnessValue = cell.style.filter.slice(-4, -1);
+        console.log('yes');
+        cell.style.filter = `brightness(${parseFloat(brightnessValue) + 0.1})`;
+    }
+    
 }
