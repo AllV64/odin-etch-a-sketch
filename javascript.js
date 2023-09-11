@@ -35,7 +35,7 @@ let cells = container.querySelectorAll('div.row > div');
 function cellHover(){
     cells.forEach((cell) => {
         cell.addEventListener('mouseover', () => {
-            addColor(cell);
+            addRandomColor(cell);
         })
     });
 };
@@ -58,7 +58,7 @@ changeGridSize.addEventListener('click', () => {
     cellHover();
 })
 
-function addColor(cell){
+function addRandomColor(cell){
     let red = Math.floor(Math.random() * 256);
     let green = Math.floor(Math.random() * 256);
     let blue = Math.floor(Math.random() * 256);
