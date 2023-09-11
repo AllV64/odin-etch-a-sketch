@@ -48,6 +48,7 @@ changeGridSize.addEventListener('click', () => {
     container.innerHTML = '';
     let userInput = prompt(`Type a number between 1 and 100`);
     validateUserInput(userInput);
+    createGrid(userInput);
 })
 
 function addColor(cell){
