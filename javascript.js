@@ -29,16 +29,17 @@ function validateUserInput(userInput){
 }
 
 let squareRoot = 4;
+createGrid(squareRoot);
 let cells = container.querySelectorAll('div.row > div');
-if (createGrid(squareRoot) == 'updated'){
-    cells = container.querySelectorAll('div.row > div');
-}
 
-cells.forEach((cell) => {
-    cell.addEventListener('mouseover', () => {
-        addColor(cell);
-    })
-});
+function cellHover(){
+    cells.forEach((cell) => {
+        cell.addEventListener('mouseover', () => {
+            addColor(cell);
+        })
+    });
+};
+cellHover();
 
 const buttonContainer = document.querySelector('#button-container');
 const invalidInput = document.createElement('div');
@@ -52,6 +53,8 @@ changeGridSize.addEventListener('click', () => {
         squareRoot = userInput;
     } ;
     createGrid(squareRoot);
+    cells = container.querySelectorAll('div.row > div');
+    cellHover();
 })
 
 function addColor(cell){
