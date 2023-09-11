@@ -6,7 +6,6 @@ function createGrid(size){
         row.classList.add('row');
         container.appendChild(row);
         for (x = 0; x < size; x++){
-           console.log(i);
            let currentRow = document.querySelector(`#row${i}`);
            const cell = document.createElement('div');
            currentRow.appendChild(cell);
