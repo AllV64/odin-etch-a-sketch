@@ -16,7 +16,6 @@ function createGrid(size){
 }
 
 function validateUserInput(userInput){
-    userInput = parseInt(userInput);
     if (isNaN(userInput)){
         invalidInput.textContent = `You must enter a number. You entered ${userInput}`;
     } else if (userInput % 1 != 0){
@@ -24,8 +23,8 @@ function validateUserInput(userInput){
     } else if (userInput <= 0 || userInput > 100){
         invalidInput.textContent = `You must enter a number between 1 and 100. You entered ${userInput}`
     } else {
-        squareRoot = userInput;
         invalidInput.textContent = "";
+        return true;
     }
 }
 
@@ -48,7 +47,10 @@ changeGridSize = document.querySelector('button');
 changeGridSize.addEventListener('click', () => {
     container.innerHTML = '';
     let userInput = prompt(`Type a number between 1 and 100`);
-    validateUserInput(userInput);
+    if (validateUserInput(userInput) == true) {
+        userInput = parseInt(userInput);
+        squareRoot = userInput;
+    } ;
     createGrid(squareRoot);
 })
 
