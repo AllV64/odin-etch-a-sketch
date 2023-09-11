@@ -59,5 +59,9 @@ changeGridSize.addEventListener('click', () => {
 })
 
 function addColor(cell){
-    
+    let red = Math.floor(Math.random() * 256);
+    let green = Math.floor(Math.random() * 256);
+    let blue = Math.floor(Math.random() * 256);
+    base = 0.1;
+    cell.style.cssText = `background: rgb(${red}, ${green}, ${blue})`; 
 }
