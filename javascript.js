@@ -43,6 +43,7 @@ cellHover();
 
 const buttonContainer = document.querySelector('#button-container');
 const invalidInput = document.createElement('div');
+invalidInput.style.cssText = 'color: red;';
 buttonContainer.appendChild(invalidInput);
 changeGridSize = document.querySelector('button');
 changeGridSize.addEventListener('click', () => {
