@@ -51,7 +51,7 @@ function addBrightness(cell){
 
 const buttonContainer = document.querySelector('#button-container');
 const invalidInput = document.createElement('div');
-invalidInput.style.cssText = 'color: red;';
+invalidInput.setAttribute('id', 'invalidInputText');
 buttonContainer.appendChild(invalidInput);
 
 changeGridSize = document.querySelector('button');

@@ -32,3 +32,8 @@ button {
     background-color: rgb(78, 75, 236);
     border-radius: 10px;
 }
+
+#invalidInputText {
+    color: rgb(255, 26, 26);
+    font-size: 1.4rem;
+}
