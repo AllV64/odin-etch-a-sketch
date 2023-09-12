@@ -24,3 +24,11 @@
     margin: 2vh 0;
     row-gap: 1vh; 
 }
+
+button {
+    font-size: 1.3em;
+    padding: 0.5rem;
+    color: white;
+    background-color: rgb(78, 75, 236);
+    border-radius: 10px;
+}
