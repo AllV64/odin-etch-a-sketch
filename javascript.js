@@ -72,7 +72,9 @@ function validateUserInput(userInput){
         invalidInput.textContent = `You must enter a number. You entered ${userInput}`;
     } else if (userInput % 1 != 0){
         invalidInput.textContent = `You must enter a whole number. You entered ${userInput}`
-    } else if (userInput <= 0 || userInput > 100){
+    } else if (userInput == null){
+        invalidInput.textContent = "";
+    }else if (userInput <= 0 || userInput > 100){
         invalidInput.textContent = `You must enter a number between 1 and 100. You entered ${userInput}`
     } else {
         invalidInput.textContent = "";
